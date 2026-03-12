@@ -10,13 +10,12 @@
 #                                                                           #
 # ************************************************************************* #
 
-from pydantic import BaseModel, Field, ValidationError, ConfigDict
+from pydantic import BaseModel, Field, ValidationError
 from datetime import datetime
 from typing import Optional
 
 
 class SpaceStation (BaseModel):
-    model_config = ConfigDict(validate_assignment=True)
 
     station_id: str = Field(min_length=3, max_length=10)
     name: str = Field(min_length=1, max_length=50)
