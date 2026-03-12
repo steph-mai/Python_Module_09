@@ -6,7 +6,7 @@
 #  By: stmaire <stmaire@student.42.fr>           +#+  +:+       +#+         #
 #                                              +#+#+#+#+#+   +#+            #
 #  Created: 2026/03/11 15:17:39 by stmaire         #+#    #+#               #
-#  Updated: 2026/03/11 17:28:44 by stmaire         ###   ########.fr        #
+#  Updated: 2026/03/12 11:37:30 by stmaire         ###   ########.fr        #
 #                                                                           #
 # ************************************************************************* #
 
@@ -81,7 +81,7 @@ def main() -> None:
     except ValidationError:
         print("Unexpected error")
 
-    print("======================================")
+    print("\n======================================")
 
     try:
         AlienContact(
